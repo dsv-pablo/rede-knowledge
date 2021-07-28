@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #F8ECE0;
+}
+
+.knowledge-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+
+}
+
+.login-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FBF8EF;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid #F3E2A9;
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img{
+    height: 7rem;
+}
+
+
+.knowledge-icon img{
+    padding:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 650px;
+    max-width: 650px;
+    margin-right: 150px;
+    border-radius: 20px;
+    margin-bottom: 80px;
+
+}
+
+.login-box h1{
+    padding-bottom: 25px;
+    font-family: Arial;
+    font-size: 30px;
+    font-style: italic;
+    color: #848484;
+}
+
+.login{
+    background-color: #FACC2E;
+    color: #ffffffff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.logout{
+    color: #FACC2E;
+    margin-top: 2rem;
+}
+
+.app-download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.download-button{
+    height:3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.download-button:nth-child(1){
+    background-image: url('./img/appleStore.png');
+}
+
+.download-button:nth-child(2){
+    height: 4rem;
+    background-image: url('./img/googlePlay.png');
+}
+.not-account{
+    color: rgb(160, 160, 160);
+}
+
+.link-yellow{
+    color: #FACC2E;
+}
+
+
+
+/* media queries */
+
+@media (max-width: 1024px){
+    .knowledge-wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    .knowledge-wrapper{
+        width: 90%;
+    }
+
+    .knowledge-icon{
+        display: none;
+    }
+    .login-box{
+        width: 100%;
+    }
+}
